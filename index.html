@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+      }
+      body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 10px;
+        height: 100vh;
+        background-color: #233142;
+        font-family: sans-serif;
+      }
+      .container {
+        background-color: #455d7a;
+        padding: 25px 50px;
+        border-radius: 10px;
+      }
+      input {
+        padding: 8px 20px;
+        border: none;
+        outline: none;
+        border-radius: 8px;
+        width: 75%;
+      }
+      #search {
+        background-color: #448852;
+        color: #fff;
+        padding: 8px 20px;
+        border-radius: 8px;
+        border: none;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        cursor: pointer;
+      }
+      p {
+        color: white;
+        letter-spacing: 1px;
+      }
+      h2 {
+        color: wheat;
+      }
+      .info {
+        display: flex;
+        gap: 15px;
+      }
+      img {
+        margin-top: 10px;
+        width: 230px;
+      }
+      .wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 7px;
+        padding-top: 10px;
+      }
+      .container-cover {
+        display: flex;
+        gap: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <h2 style="color: #fff">Search Movie</h2>
+    <div class="container">
+      <div class="container-cover">
+        <input type="text" name="" id="movie-name" placeholder="Enter movie name here"/>
+        <button id="search">Search</button>
+      </div>
+      <div class="result" id="result"></div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
